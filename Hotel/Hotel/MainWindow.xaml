@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Click="Button_Click" Content="Button" Width="526" Margin="10,0,264,379"/>
+
+        <ListView Name="myListView" Margin="0,60,0,0">
+
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn Header="Imie" DisplayMemberBinding="{Binding Imie}"/>
+                    <GridViewColumn Header="Nazwisko" DisplayMemberBinding="{Binding Nazwisko}" />
+                    <GridViewColumn Header="Telefon" DisplayMemberBinding="{Binding Telefon}" />
+                    <GridViewColumn Header="Pobyty" DisplayMemberBinding="{Binding Pobyties}" />
+                    <GridViewColumn Header="Uslugi" DisplayMemberBinding="{Binding WykupioneUslugis}" />
+                </GridView>
+
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>
