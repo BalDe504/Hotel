@@ -24,11 +24,33 @@ namespace Hotel
 
         public ShowClients()
         {
-            var items = new ObservableCollection<Klienci>();
-            items.Add(new Klienci() { Imie = "John Doe" });
-            myListView.ItemsSource = items;
-            InitializeComponent();
 
+            InitializeComponent();
+            var items = new ObservableCollection<Object>();
+            using (var context = new HotelContext())
+            {
+                var query = from k in context.Kliencis join p in context.Pobyties on k.IdKlienta equals p.IdKlienta orderby p.IdKlienta select new
+                {
+                    k.Imie,
+                    k.Nazwisko,
+                    k.Telefon,
+                    p.DataPrzyjazdu,
+                    p.ZakonczonyPobyt
+                };
+                foreach (var klient in query)
+                {
+                    items.Add(klient);
+                }
+            }
+            myListView.ItemsSource = items;
+
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
 
         private void myListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -1,18 +1,18 @@
-﻿<Window x:Class="Hotel.ShowAccomodations"
+﻿<Window x:Class="Hotel.ShowServicesBought"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hotel"
         mc:Ignorable="d"
-        Title="ShowAccomodations" Height="450" Width="800">
+        Title="ShowServicesBought" Height="450" Width="800">
     <Grid>
-        <ListView Name="myListView1" SelectionChanged="myListView1_SelectionChanged">
+        <ListView Name="myListView2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}"/>
                     <GridViewColumn Header="IDKlienta" DisplayMemberBinding="{Binding IdKlienta}"/>
-                    <GridViewColumn Header="IDPokoju" DisplayMemberBinding="{Binding IdPokoju}"/>
+                    <GridViewColumn Header="IDUslugi" DisplayMemberBinding="{Binding IdUslugi}"/>
                 </GridView>
             </ListView.View>
         </ListView>

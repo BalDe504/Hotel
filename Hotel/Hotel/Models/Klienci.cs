@@ -18,5 +18,9 @@ namespace Hotel.Models
 
         public virtual ICollection<Pobyty> Pobyties { get; set; }
         public virtual ICollection<WykupioneUslugi> WykupioneUslugis { get; set; }
+
+        public bool ZakonczonyPobyt { get; set; } = false;
+        public DateTime DataPrzyjazdu { get; set; }
+
     }
 }

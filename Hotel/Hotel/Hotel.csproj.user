@@ -13,6 +13,15 @@
     <Compile Update="ShowClients.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="showRooms.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowServices.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowServicesBought.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -22,6 +31,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ShowClients.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="showRooms.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShowServices.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShowServicesBought.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

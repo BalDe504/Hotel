@@ -8,13 +8,19 @@
         mc:Ignorable="d"
         Title="ShowClients" Height="450" Width="800">
     <Grid>
-        <ListView Name="myListView" SelectionChanged="myListView_SelectionChanged">
+        <ListView Name="myListView">
             <ListView.View >
                 <GridView>
                     <GridViewColumn Header="Imie" DisplayMemberBinding="{Binding Imie}"/>
+                    <GridViewColumn Header="Nazwisko" DisplayMemberBinding="{Binding Nazwisko}" />
+                    <GridViewColumn Header="Telefon" DisplayMemberBinding="{Binding Telefon}" />
+                    <GridViewColumn Header="Przyjazd" DisplayMemberBinding="{Binding DataPrzyjazdu}" />
+                    <GridViewColumn Header="Wyjazd" DisplayMemberBinding="{Binding ZakonczonyPobyt}" />
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button Click="Button_Click3" Content="Wroc" Margin="564,321,55,55" RenderTransformOrigin="0.5,0.5"/>
+
 
     </Grid>
 </Window>

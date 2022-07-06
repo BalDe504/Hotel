@@ -25,17 +25,7 @@ namespace Hotel
         public MainWindow()
         {
             InitializeComponent();
-            var items = new ObservableCollection<Klienci>();
-            using (var context = new HotelContext())
-            {
-                var query = from p in context.Kliencis orderby p.IdKlienta select p;
-                foreach(var klient in query)
-                {
-                    items.Add(klient);
-                }
-            }
-            myListView.ItemsSource = items;
-            InitializeComponent();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -45,5 +35,25 @@ namespace Hotel
             this.Close();
         }
 
+        private void Button_Click1(object sender, RoutedEventArgs e)
+        {
+            Window clientsWindow = new ShowClients();
+            clientsWindow.Show();
+            this.Close();
+        }
+
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Window ServicesBWindow = new ShowServicesBought();
+            ServicesBWindow.Show();
+            this.Close();
+        }
+
+        private void Button_Click4(object sender, RoutedEventArgs e)
+        {
+            Window ServicesWindow = new ShowServices();
+            ServicesWindow.Show();
+            this.Close();
+        }
     }
 }

@@ -6,22 +6,11 @@
         xmlns:local="clr-namespace:Hotel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Click="Button_Click" Content="Button" Width="526" Margin="10,0,264,379"/>
-
-        <ListView Name="myListView" Margin="0,60,0,0">
-
-            <ListView.View >
-                <GridView>
-                    <GridViewColumn Header="Imie" DisplayMemberBinding="{Binding Imie}"/>
-                    <GridViewColumn Header="Nazwisko" DisplayMemberBinding="{Binding Nazwisko}" />
-                    <GridViewColumn Header="Telefon" DisplayMemberBinding="{Binding Telefon}" />
-                    <GridViewColumn Header="Pobyty" DisplayMemberBinding="{Binding Pobyties}" />
-                    <GridViewColumn Header="Uslugi" DisplayMemberBinding="{Binding WykupioneUslugis}" />
-                </GridView>
-
-            </ListView.View>
-        </ListView>
+    <Grid Margin="10,0,-10,0">
+        <Button Click="Button_Click" Content="Zakwaterowania" Margin="435,304,59,79"/>
+        <Button Click="Button_Click1" Content="Klienci" Margin="55,304,439,79"/>
+        <Button Click="Button_Click3" Content="Wykupione usługi" Margin="435,106,59,277"/>
+        <Button Click="Button_Click4" Content="Usługi" Margin="55,106,439,277"/>
 
     </Grid>
 </Window>

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 F:\git\Hotel\Hotel\Hotel\App.xaml
-32066047624
+6-1384823008
 
-13456424046
+16-1206324866
 222-677767727
-MainWindow.xaml;ShowAccomodations.xaml;ShowClients.xaml;
+MainWindow.xaml;ShowAccomodations.xaml;ShowClients.xaml;showRooms.xaml;ShowServices.xaml;ShowServicesBought.xaml;
 
-False
+True
 
