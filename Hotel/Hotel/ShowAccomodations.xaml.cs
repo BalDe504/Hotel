@@ -43,6 +43,13 @@ namespace Hotel
             this.Close();
         }
 
+        private void Button_Click3(object sender, RoutedEventArgs e)
+        {
+            Window addAccomodations = new AddAccomodoations();
+            addAccomodations.Show();
+            this.Close();
+        }
+
         private void myListView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 

@@ -1,0 +1,29 @@
+﻿<Window x:Class="Hotel.AddAccomodoations"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Title="AddAccomodoations" Height="450" Width="800">
+    <Grid>
+        <Grid Margin="10,0,390,338">
+            <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">ID Klienta</Label>
+            <TextBox Name="IDKlienta" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,35,0,0" Width="400" Height="61"/>
+        </Grid>
+        <Grid Margin="10,96,390,248">
+            <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">ID Pokoju</Label>
+            <TextBox VerticalAlignment="Top" Name="IDPokoju" HorizontalAlignment="Left" Margin="5,34,0,0" Width="400" Height="56"/>
+        </Grid>
+        <Grid Margin="10,186,390,149">
+            <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">Data przyjazdu</Label>
+            <TextBox VerticalAlignment="Top" Name="Data_przyjazdu" HorizontalAlignment="Left" Margin="5,33,0,0" Width="400" Height="66"/>
+        </Grid>
+        <Grid Margin="10,290,390,45">
+            <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">Zakończony pobyt?</Label>
+            <TextBox VerticalAlignment="Top" Name="Zakonczony_pobyt" HorizontalAlignment="Left" Margin="5,33,0,0" Width="400" Height="66"/>
+        </Grid>
+        <Button Name="AddButton" Content="Dodaj" Margin="564,321,55,55" RenderTransformOrigin="0.5,0.5" Click="Button_Click"/>
+        <Button Content="Wróć" Margin="564,251,55,125" RenderTransformOrigin="0.5,0.5" Click="Button_Back"/>
+    </Grid>
+</Window>

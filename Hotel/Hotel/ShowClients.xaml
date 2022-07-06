@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="ShowClients" Height="450" Width="800">
     <Grid>
-        <ListView Name="myListView">
+        <ListView Name="myListView" Margin="0,0,341,0">
             <ListView.View >
                 <GridView>
                     <GridViewColumn Header="Imie" DisplayMemberBinding="{Binding Imie}"/>
@@ -19,7 +19,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Click="Button_Click3" Content="Wroc" Margin="564,321,55,55" RenderTransformOrigin="0.5,0.5"/>
+        <Button Click="Button_Add" Content="Dodawanie" Margin="564,255,55,121" RenderTransformOrigin="0.5,0.5"/>
+        <Button Click="Button_Click3" Content="Wroc" Margin="564,318,55,58" RenderTransformOrigin="0.5,0.5"/>
 
 
     </Grid>

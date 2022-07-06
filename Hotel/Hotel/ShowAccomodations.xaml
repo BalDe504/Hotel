@@ -17,5 +17,6 @@
             </ListView.View>
         </ListView>
         <Button Click="Button_Click2" Content="Wroc" Margin="556,328,55,55"/>
+        <Button Click="Button_Click3" Content="Nowe zakwaterowanie" Margin="556,272,55,111"/>
     </Grid>
 </Window>

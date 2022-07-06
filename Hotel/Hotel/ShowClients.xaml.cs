@@ -29,14 +29,17 @@ namespace Hotel
             var items = new ObservableCollection<Object>();
             using (var context = new HotelContext())
             {
-                var query = from k in context.Kliencis join p in context.Pobyties on k.IdKlienta equals p.IdKlienta orderby p.IdKlienta select new
-                {
-                    k.Imie,
-                    k.Nazwisko,
-                    k.Telefon,
-                    p.DataPrzyjazdu,
-                    p.ZakonczonyPobyt
-                };
+                var query = from k in context.Kliencis
+                            join p in context.Pobyties on k.IdKlienta equals p.IdKlienta
+                            orderby k.IdKlienta
+                            select new
+                            {
+                                k.Imie,
+                                k.Nazwisko,
+                                k.Telefon,
+                                p.DataPrzyjazdu,
+                                p.ZakonczonyPobyt
+                            };
                 foreach (var klient in query)
                 {
                     items.Add(klient);
@@ -53,9 +56,11 @@ namespace Hotel
             this.Close();
         }
 
-        private void myListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Button_Add(object sender, RoutedEventArgs e)
         {
-
+            Window addClient = new AddClient();
+            addClient.Show();
+            this.Close();
         }
     }
 }
