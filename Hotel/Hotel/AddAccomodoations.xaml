@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="AddAccomodoations" Height="450" Width="800">
     <Grid>
-        <Grid Margin="10,0,390,338">
+        <Grid Margin="10,0,376,338">
             <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">ID Klienta</Label>
             <TextBox Name="IDKlienta" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5,35,0,0" Width="400" Height="61"/>
         </Grid>
-        <Grid Margin="10,96,390,248">
+        <Grid Margin="10,96,376,248">
             <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">ID Pokoju</Label>
             <TextBox VerticalAlignment="Top" Name="IDPokoju" HorizontalAlignment="Left" Margin="5,34,0,0" Width="400" Height="56"/>
         </Grid>
-        <Grid Margin="10,186,390,149">
+        <Grid Margin="10,186,376,149">
             <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">Data przyjazdu</Label>
             <TextBox VerticalAlignment="Top" Name="Data_przyjazdu" HorizontalAlignment="Left" Margin="5,33,0,0" Width="400" Height="66"/>
         </Grid>
-        <Grid Margin="10,290,390,45">
+        <Grid Margin="10,290,376,45">
             <Label Grid.ColumnSpan="3" HorizontalAlignment="Left">Zakończony pobyt?</Label>
             <TextBox VerticalAlignment="Top" Name="Zakonczony_pobyt" HorizontalAlignment="Left" Margin="5,33,0,0" Width="400" Height="66"/>
         </Grid>

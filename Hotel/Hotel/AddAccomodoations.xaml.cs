@@ -33,6 +33,7 @@ namespace Hotel
                 context.Pobyties.Add(pobyt);
                 
                 var result = await context.SaveChangesAsync();
+                AddButton.Content = "Added";
 
             }
             
@@ -41,8 +42,8 @@ namespace Hotel
 
         private void Button_Back(object sender, RoutedEventArgs e)
         {
-            Window clientsWindow = new ShowClients();
-            clientsWindow.Show();
+            Window showAccomodationsWindow = new ShowAccomodations();
+            showAccomodationsWindow.Show();
             this.Close();
         }
     }

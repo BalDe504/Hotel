@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "F:\\git\\Hotel\\Hotel\\Hotel\\Hotel.csproj": {}
+    "C:\\Users\\Dejmen\\Documents\\GitHub\\Hotel\\Hotel\\Hotel\\Hotel.csproj": {}
   },
   "projects": {
-    "F:\\git\\Hotel\\Hotel\\Hotel\\Hotel.csproj": {
+    "C:\\Users\\Dejmen\\Documents\\GitHub\\Hotel\\Hotel\\Hotel\\Hotel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\git\\Hotel\\Hotel\\Hotel\\Hotel.csproj",
+        "projectUniqueName": "C:\\Users\\Dejmen\\Documents\\GitHub\\Hotel\\Hotel\\Hotel\\Hotel.csproj",
         "projectName": "Hotel",
-        "projectPath": "F:\\git\\Hotel\\Hotel\\Hotel\\Hotel.csproj",
-        "packagesPath": "C:\\Users\\Patryk Strzygocki\\.nuget\\packages\\",
-        "outputPath": "F:\\git\\Hotel\\Hotel\\Hotel\\obj\\",
+        "projectPath": "C:\\Users\\Dejmen\\Documents\\GitHub\\Hotel\\Hotel\\Hotel\\Hotel.csproj",
+        "packagesPath": "C:\\Users\\Dejmen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dejmen\\Documents\\GitHub\\Hotel\\Hotel\\Hotel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Patryk Strzygocki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dejmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -83,7 +83,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
         }
       }
     }
